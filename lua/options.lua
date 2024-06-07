@@ -9,6 +9,7 @@ vim.o.termguicolors = true
 vim.o.showmode = false
 vim.o.signcolumn = 'yes'
 vim.o.background = 'dark'
+vim.o.clipboard = 'unnamedplus'
 
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>s', ':write<CR>')
