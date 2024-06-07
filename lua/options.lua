@@ -7,6 +7,7 @@ vim.o.linebreak = true  -- Wrap lines between words
 vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.showmode = false
+vim.o.signcolumn = 'yes'
 vim.o.background = 'dark'
 
 vim.g.mapleader = ' '
