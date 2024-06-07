@@ -17,6 +17,9 @@ return {
         lspconfig.gopls.setup({
             capabilities = capabilities
         })
+        lspconfig.pylsp.setup({
+            capabilities = capabilities
+        })
 
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
         vim.keymap.set('n', '<Leader>ld', vim.diagnostic.open_float, {})
@@ -25,7 +28,7 @@ return {
 
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "gopls" }
+            ensure_installed = { "lua_ls", "gopls", "pylsp" }
         })
 
         local cmp = require('cmp')
